@@ -2,44 +2,78 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mairaj Poke | Digital Marketer</title>
+<title>Mairaj Poke | Digital Marketing Technologist</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+font-family:Arial, sans-serif;
+background:#0a192f;
 color:white;
-text-align:center;
 }
 
-.container{
-margin-top:100px;
+nav{
+background:#020c1b;
+padding:15px;
+position:fixed;
+width:100%;
+top:0;
 }
 
-h1{
-font-size:40px;
+nav h2{
+margin:0;
+color:#64ffda;
 }
 
-p{
-font-size:20px;
+section{
+padding:100px 20px;
+max-width:900px;
+margin:auto;
 }
 
-button{
-padding:15px 30px;
-border:none;
-border-radius:30px;
-background:#00ffd5;
-color:black;
-font-size:18px;
-cursor:pointer;
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero h1{
+font-size:50px;
+color:#64ffda;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.btn{
+display:inline-block;
 margin-top:20px;
+padding:12px 25px;
+background:#64ffda;
+color:black;
+text-decoration:none;
+border-radius:5px;
 }
 
-button:hover{
-background:white;
+.card{
+background:#112240;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+}
+
+.skill{
+margin-top:10px;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+background:#020c1b;
 }
 
 </style>
@@ -48,27 +82,126 @@ background:white;
 
 <body>
 
-<div class="container">
+<nav>
+<h2>Mairaj Poke</h2>
+</nav>
 
-<h1>Hi, I'm Mairaj 👋</h1>
+<section class="hero">
 
-<p>Digital Marketer | Content Writer | Growth Strategist</p>
+<h1>Hi, I'm Mairaj</h1>
 
-<button onclick="showMessage()">View My Work</button>
+<h2>Digital Marketing Technologist</h2>
 
-<p id="msg"></p>
+<p>
+I help brands grow using SEO, content, ads, and AI-driven marketing strategies.
+</p>
+
+<a href="https://www.linkedin.com/in/mairaj-poke" class="btn">
+Connect on LinkedIn
+</a>
+
+</section>
+
+<section>
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+
+Digital Marketing Professional with 5+ years experience.
+
+✔ Increased website traffic by 100%  
+✔ Generated 50K+ organic reach  
+✔ Managed 20+ social media accounts  
+
+I combine marketing, psychology, and technology to build growth systems.
+
+</p>
 
 </div>
 
-<script>
+</section>
 
-function showMessage(){
+<section>
 
-document.getElementById("msg").innerHTML="My portfolio is coming. Stay tuned 🚀";
+<h2>Experience</h2>
 
-}
+<div class="card">
 
-</script>
+<h3>Digital Content Creator</h3>
+
+<p>MasterTech Web Applications (2025-Present)</p>
+
+</div>
+
+<div class="card">
+
+<h3>Sr Content Writer</h3>
+
+<p>Singhania QuestPlus</p>
+
+</div>
+
+<div class="card">
+
+<h3>Digital Marketer</h3>
+
+<p>TalentExplorer</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Skills</h2>
+
+<div class="card">
+
+<div class="skill">SEO</div>
+
+<div class="skill">Google Ads</div>
+
+<div class="skill">Meta Ads</div>
+
+<div class="skill">Content Writing</div>
+
+<div class="skill">Web Development</div>
+
+<div class="skill">AI Marketing</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>
+
+Email: your@email.com
+
+<br><br>
+
+LinkedIn: linkedin.com/in/mairaj-poke
+
+</p>
+
+</div>
+
+</section>
+
+<div class="footer">
+
+© 2026 Mairaj Poke
+
+</div>
 
 </body>
+
 </html>
