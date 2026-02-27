@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mairaj Poke | Content Writer & Marketing Specialist</title>
+<title>Mairaj Poke | Digital Growth Strategist</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,15 +13,42 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Inter',sans-serif;
 }
 
 body{
 background:#0f172a;
-color:white;
+color:#e2e8f0;
+overflow-x:hidden;
 }
 
-/* HERO */
+/* Gradient Glow Background */
+
+body::before{
+content:'';
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#3b82f6,transparent 70%);
+top:-200px;
+left:-200px;
+z-index:-1;
+filter:blur(120px);
+}
+
+body::after{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#22d3ee,transparent 70%);
+bottom:-200px;
+right:-200px;
+z-index:-1;
+filter:blur(120px);
+}
+
+/* Hero */
 
 .hero{
 height:100vh;
@@ -30,170 +57,175 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:20px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:52px;
+font-weight:700;
+background:linear-gradient(90deg,#3b82f6,#22d3ee);
+-webkit-background-clip:text;
+color:transparent;
 }
 
-.hero h2{
-font-size:22px;
-color:#38bdf8;
-margin-top:10px;
+.hero p{
+margin-top:20px;
+font-size:20px;
+max-width:600px;
+color:#cbd5e1;
 }
 
 .btn{
-margin-top:20px;
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-text-decoration:none;
-border-radius:8px;
+margin-top:30px;
+padding:14px 30px;
+border-radius:50px;
+border:none;
+background:linear-gradient(90deg,#3b82f6,#22d3ee);
+color:white;
 font-weight:600;
+cursor:pointer;
+text-decoration:none;
+transition:0.3s;
 }
 
-/* SECTION */
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Sections */
 
 .section{
-padding:60px 20px;
-max-width:1000px;
+padding:100px 20px;
+max-width:1100px;
 margin:auto;
 }
 
 .section h2{
-font-size:30px;
-margin-bottom:20px;
-color:#38bdf8;
+font-size:36px;
+margin-bottom:40px;
 }
 
-/* SKILLS */
+/* Glass Cards */
 
-.skills span{
-display:inline-block;
-background:#1e293b;
-padding:10px 15px;
-margin:5px;
-border-radius:8px;
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.1);
+padding:30px;
+border-radius:20px;
+margin-bottom:30px;
+transition:0.3s;
 }
 
-/* CONTACT */
-
-.contact a{
-display:block;
-color:#38bdf8;
-margin:10px 0;
-text-decoration:none;
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
 }
+
+/* Grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* Footer */
 
 footer{
 text-align:center;
-padding:20px;
-background:#020617;
-margin-top:40px;
+padding:40px;
+border-top:1px solid rgba(255,255,255,0.1);
+margin-top:50px;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:36px;}
 }
 
 </style>
-
 </head>
+
 <body>
-
-
-<!-- HERO -->
 
 <section class="hero">
 
 <h1>Mairaj Poke</h1>
 
-<h2>Content Writer | SEO | Performance Marketer</h2>
+<p>
+Performance Marketer & Content Strategist helping brands scale with SEO, Paid Ads & AI-driven marketing systems.
+</p>
 
-<a href="#contact" class="btn">Hire Me</a>
+<a href="#contact" class="btn">Work With Me</a>
 
 </section>
-
-
-<!-- ABOUT -->
 
 <section class="section">
 
 <h2>About Me</h2>
 
-<p>
+<div class="card">
 
-I am a professional Content Writer and Performance Marketer at MasterTech.
+5+ years in Digital Marketing & Content Writing.  
+I design growth systems — not just campaigns.
 
-I specialize in SEO content, marketing strategy, and high-converting copywriting.
-
-I help brands grow using content and paid marketing.
-
-</p>
-
-</section>
-
-
-<!-- SKILLS -->
-
-<section class="section">
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<span>Content Writing</span>
-
-<span>SEO</span>
-
-<span>Performance Marketing</span>
-
-<span>Copywriting</span>
-
-<span>Google Ads</span>
-
-<span>Meta Ads</span>
+Focused on ROI, performance metrics, and scalable acquisition strategies.
 
 </div>
 
 </section>
 
+<section class="section">
 
-<!-- EXPERIENCE -->
+<h2>Services</h2>
+
+<div class="grid">
+
+<div class="card">Performance Marketing</div>
+
+<div class="card">SEO Strategy</div>
+
+<div class="card">Conversion Copywriting</div>
+
+<div class="card">Meta & Google Ads</div>
+
+</div>
+
+</section>
 
 <section class="section">
 
-<h2>Experience</h2>
+<h2>Case Studies</h2>
 
-<p>
+<div class="card">
 
-Content Writer — MasterTech
+Campaign Optimization — Increased traffic by 100%+  
+Built structured funnel strategy & scaled paid campaigns.
 
-<br><br>
-
-Creating SEO content, marketing campaigns, and business growth strategies.
-
-</p>
+</div>
 
 </section>
 
-
-<!-- CONTACT -->
-
-<section class="section contact" id="contact">
+<section class="section" id="contact">
 
 <h2>Contact</h2>
 
-<a href="mailto:your@email.com">Email Me</a>
+<div class="card">
 
-<a href="https://www.linkedin.com/in/mairaj-poke" target="_blank">LinkedIn</a>
+Email: your@email.com  
+<br><br>
+LinkedIn: linkedin.com/in/mairaj-poke
+
+</div>
 
 </section>
 
-
 <footer>
 
-© 2026 Mairaj Poke
+© 2026 Mairaj Poke — Digital Growth Portfolio
 
 </footer>
-
 
 </body>
 </html>
