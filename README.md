@@ -8,7 +8,7 @@ A premium, fully responsive personal portfolio website built with pure HTML, CSS
 
 ## 🔗 Live Site
 
-👉 [https://yourusername.github.io](https://yourusername.github.io) *(replace with your GitHub Pages URL)*
+👉 [https://mairaj-poke.github.io](https://yourusername.github.io)
 
 ---
 
